@@ -14,9 +14,9 @@ import {
   DrawerHeader,
   DrawerBody,
   VStack,
-  Link,
-} from '@chakra-ui/react';
 
+} from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = useState('left');
@@ -38,16 +38,16 @@ const Navbar = () => {
         <Spacer />
 
         <Box display={display}>
-          <Link as={Button} variant='ghost' href='/'>
+          <Link to='/'>
             Home
           </Link>
-          <Link as={Button} variant='ghost' href='/about'>
+          <Link to='/about'>
             About
           </Link>
-          <Link as={Button} variant='ghost' href='/contact'>
+          <Link to='/contact'>
             Contact
           </Link>
-          <Link as={Button} variant='ghost' href='/login'>
+          <Link to='/login'>
             Login
           </Link>
         </Box>
@@ -78,16 +78,16 @@ const Navbar = () => {
           <DrawerHeader>Gotham Coffee Shop</DrawerHeader>
           <DrawerBody>
             <VStack spacing='4'>
-              <Link as={Button} variant='ghost' href='/'>
+              <Link to='/'>
                 Home
               </Link>
-              <Link as={Button} variant='ghost' href='/about'>
+              <Link to='/about'>
                 About
               </Link>
-              <Link as={Button} variant='ghost' href='/contact'>
+              <Link to='/contact'>
                 Contact
               </Link>
-              <Link as={Button} variant='ghost' href='/login'>
+              <Link to='/login'>
                 Login
               </Link>
             </VStack>
