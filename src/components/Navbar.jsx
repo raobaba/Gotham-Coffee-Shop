@@ -38,16 +38,16 @@ const Navbar = () => {
         <Spacer />
 
         <Box display={display}>
-          <Link to='/'>
+          <Link to='/' style={{marginLeft:"20px",fontSize:"20px"}}>
             Home
           </Link>
-          <Link to='/about'>
+          <Link to='/about' style={{marginLeft:"20px",fontSize:"20px"}}>
             About
           </Link>
-          <Link to='/contact'>
+          <Link to='/contact' style={{marginLeft:"20px",fontSize:"20px"}}>
             Contact
           </Link>
-          <Link to='/login'>
+          <Link to='/login' style={{marginLeft:"20px",fontSize:"20px"}}>
             Login
           </Link>
         </Box>
